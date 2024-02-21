@@ -1,6 +1,7 @@
 import React from "react";
 import platform from "./ui/img/Platform.svg";
 import razetka from "./ui/img/image 4.svg";
+import Image from "next/image";
 
 const Description = () => {
   return (
@@ -19,13 +20,13 @@ const Description = () => {
           </span>
         </div>
         <div className="w-full flex justify-center">
-          <img src={platform} alt="platform" />
+          <Image src={platform} alt="platform" />
         </div>
       </div>
 
       <div className="flex lg:flex-row flex-col gap-[50px]">
         <div className="w-full flex justify-center">
-          <img src={razetka} alt="img" />
+          <Image src={razetka} alt="img" />
         </div>
         <div className="flex flex-col gap-3 p-[35px] rounded-[20px] bg-[#F5F1F1]  min-w-[600px] w-full lg:w-[60%] text-xl">
           <div>

@@ -1,12 +1,13 @@
 import React from "react";
 import schem from "./ui/img/схема.svg";
 import { GoGitCommit } from "react-icons/go";
+import Image from "next/image";
 
 const Schema = () => {
   return (
     <div className="mt-[120px] px-[60px] lg:px-[120px]">
       <div className="flex justify-center mb-[30px]">
-        <img src={schem} alt="schem" />
+        <Image src={schem} alt="schem" />
       </div>
       <div className="flex flex-col gap-3">
         <div className="flex flex-row items-center">

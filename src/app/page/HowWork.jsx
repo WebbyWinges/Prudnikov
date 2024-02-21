@@ -4,10 +4,11 @@ import { GoGitCommit } from "react-icons/go";
 import BankIcons from "./ui/icons";
 import Bank from "./ui/img/Vector (1).svg";
 import Corp from "./ui/img/Vector (2).svg";
+import Image from "next/image";
 
 const HowWork = () => {
   return (
-    <div className="mt-[120px] px-[60px] lg:px-[120px]">
+    <div className="mt-[120px] px-[60px] lg:px-[120px] mb-[120px]">
       <div>
         <h2 className="text-[54px] leading-[85.5px] font-medium text-[#0A0459] text-center mb-[34px]">
           Как работать с мобильным модулем:
@@ -44,12 +45,12 @@ const HowWork = () => {
         </div>
       </div>
 
-      <div className=" flex justify-between mt-[120px]">
+      <div className=" flex items-center gap-9 flex-col lg:flex-row justify-between mt-[120px]">
         <div className="flex flex-col gap-2 max-w-[320px] justify-center text-center items-center">
           <h4 className="text-[32px] leading-[150%] text-[rgba(10,4,89,0.9)] font-bold">
             Банки
           </h4>
-          <img className="max-w-[264px]" src={Bank} alt="img" />
+          <Image className="max-w-[264px]" src={Bank} alt="img" />
           <p>
             Применяется для оперативного создания защищённых каналов связи между
             отделениями банка как в пределах одного города, так и области
@@ -60,7 +61,7 @@ const HowWork = () => {
           <h4 className="text-[32px] leading-[150%] text-[rgba(10,4,89,0.9)] font-bold">
             Корпорации
           </h4>
-          <img className="max-w-[264px]" src={Corp} alt="img" />
+          <Image className="max-w-[264px]" src={Corp} alt="img" />
           <p>
             Помогает создавать временные и/или постоянные защищённые каналы
             связи между филиалами
@@ -71,7 +72,7 @@ const HowWork = () => {
           <h4 className="text-[32px] leading-[150%] text-[rgba(10,4,89,0.9)] font-bold">
             Банки
           </h4>
-          <img className="max-w-[264px]" src={Bank} alt="img" />
+          <Image className="max-w-[264px]" src={Bank} alt="img" />
           <p>
             Применяется для оперативного создания защищённых каналов связи между
             отделениями банка как в пределах одного города, так и области

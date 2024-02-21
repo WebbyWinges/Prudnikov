@@ -4,18 +4,29 @@ import Description from "./page/Description";
 import Schema from "./page/Schema";
 import HowWork from "./page/HowWork";
 import Company from "./page/Company";
+// import BasicForm from "./page/BasicForm";
 import BasicForm from "./page/BasicForm";
+import Contact from "./page/Contact";
+import Footer from "./page/Footer";
 
 function App() {
   return (
     <div className=" ">
       <Navbar />
       <Logo />
+      <div id="description" />
       <Description />
+      <div id="schema" />
       <Schema />
+      <div id="howWork" />
       <HowWork />
+      <div id="company" />
       <Company />
-      {/* <BasicForm /> */}
+      <div id="form" />
+      <BasicForm />
+      <div id="contact" />
+      <Contact />
+      <Footer />
     </div>
   );
 }
