@@ -5,7 +5,7 @@ import Image from "next/image";
 
 const Description = () => {
   return (
-    <div className="px-[120px] mt-[120px] flex lg:gap-[50px] flex-col">
+    <div className="px-[120px] mt-[120px] flex lg:gap-[50px] flex-col bg-[#272B3A]">
       <div className="flex lg:flex-row flex-col-reverse gap-[50px] w-full ">
         <div className="p-[35px] flex flex-col gap-3 rounded-[20px] bg-[#F5F1F1] w-full min-w-[600px] lg:w-[60%] text-xl mb-[30px]">
           <p className="font-bold">
