@@ -36,13 +36,21 @@ const formSchema = yup.object().shape({
     .string()
     .email("Некорретный адрес почты")
     .required("Укажите свой email"),
-  phoneNumber: yup.string().required("Укажите номер телефона"),
+  phoneNumber: yup.string().required("Укажите свой номер телефона"),
   questions: yup.string(),
 });
 
-const addNewUser = async (newUser) => {
+const addNewUser = async (values) => {
   try {
-    const response = await axios.post("/users", newUser);
+    // Проверяем, что номер телефона существует перед обработкой
+    let phoneNumber = values.phoneNumber
+      ? values.phoneNumber.replace(/\D/g, "")
+      : "";
+    const newUser = { ...values, phoneNumber }; // Обновляем номер телефона в объекте values
+    const response = await axios.post(
+      "http://localhost:4444/feedback",
+      newUser
+    );
     showToastMessage();
     return response.data;
   } catch (err) {
@@ -65,9 +73,10 @@ const BasicForm = () => (
       validationSchema={formSchema}
       onSubmit={(values, { setSubmitting }) => {
         setTimeout(() => {
-          const phoneNumber = values.phoneNumber.replace(/\D/g, "");
-          alert(JSON.stringify(phoneNumber, null, 2));
-          addNewUser(phoneNumber);
+          addNewUser(values); // Передаем объект values без изменений
+          {
+            console.log(values);
+          }
           setSubmitting(false);
         }, 400);
       }}
@@ -121,9 +130,9 @@ const BasicForm = () => (
             type="tel"
             name="phoneNumber"
             placeholder="PhoneNumber"
-            mask="+7(999)-999-99-99"
-            maskChar=" "
-            component={InputMask}
+            as={InputMask}
+            mask="+7(999)999-99-99"
+            maskChar=""
           />
           <ErrorMessage
             className="text-[#e05e37]"
