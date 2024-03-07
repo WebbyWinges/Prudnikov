@@ -5,6 +5,8 @@ import { Field, Form, Formik, FormikProps, ErrorMessage } from "formik";
 
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
+import * as yup from "yup";
+import InputMask from "react-input-mask";
 
 import s from "../styles/forms.module.scss";
 
@@ -27,6 +29,17 @@ const showToastError = () => {
   });
 };
 
+const formSchema = yup.object().shape({
+  name: yup.string().required("Укажите имя"),
+  nameCompany: yup.string(),
+  email: yup
+    .string()
+    .email("Некорретный адрес почты")
+    .required("Укажите свой email"),
+  phoneNumber: yup.string().required("Укажите номер телефона"),
+  questions: yup.string(),
+});
+
 const addNewUser = async (newUser) => {
   try {
     const response = await axios.post("/users", newUser);
@@ -42,45 +55,92 @@ const BasicForm = () => (
   <div>
     <Formik
       initialValues={{
+        legalEntity: true,
         name: "",
         nameCompany: "",
         email: "",
         phoneNumber: "",
         questions: "",
       }}
-      validate={(values) => {
-        const errors = {};
-        if (!values.email) {
-          errors.email = "Required";
-        } else if (
-          !/^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,}$/i.test(values.email)
-        ) {
-          errors.email = "Invalid email address";
-        }
-        return errors;
-      }}
+      validationSchema={formSchema}
       onSubmit={(values, { setSubmitting }) => {
         setTimeout(() => {
-          alert(JSON.stringify(values, null, 2));
-          addNewUser(values);
+          const phoneNumber = values.phoneNumber.replace(/\D/g, "");
+          alert(JSON.stringify(phoneNumber, null, 2));
+          addNewUser(phoneNumber);
           setSubmitting(false);
         }, 400);
       }}
+      validateOnChange={true}
+      validateOnBlur={true}
     >
       {({ isSubmitting }) => (
         <Form className={s.forms}>
           <h1>Обратная связь</h1>
           <ToastContainer />
-          <Field type="name" name="name" placeholder="Name" />
           <Field
+            className=" text-[#5a5959]"
+            type="name"
+            name="name"
+            placeholder="Name"
+            inputProps={{
+              style: {
+                color: "#5a5959",
+              },
+            }}
+          />
+          <ErrorMessage
+            className="text-[#e05e37]"
+            name="name"
+            component="div"
+          />
+          <Field
+            className=" text-[#5a5959]"
             type="nameCompany"
             name="nameCompany"
             placeholder="NameCompany"
           />
-          <Field type="email" name="email" placeholder="Email" />
-          <ErrorMessage name="email" component="div" />
-          <Field type="tel" name="phoneNumber" placeholder="PhoneNumber" />
-          <Field type="questions" name="questions" placeholder="Questions" />
+          <ErrorMessage
+            className="text-[#e05e37]"
+            name="nameCompany"
+            component="div"
+          />
+          <Field
+            className=" text-[#5a5959]"
+            type="email"
+            name="email"
+            placeholder="Email"
+          />
+          <ErrorMessage
+            className="text-[#e05e37]"
+            name="email"
+            component="div"
+          />
+          <Field
+            className=" text-[#5a5959]"
+            type="tel"
+            name="phoneNumber"
+            placeholder="PhoneNumber"
+            mask="+7(999)-999-99-99"
+            maskChar=" "
+            component={InputMask}
+          />
+          <ErrorMessage
+            className="text-[#e05e37]"
+            name="phoneNumber"
+            component="div"
+          />
+          <Field
+            className=" text-[#5a5959]"
+            type="questions"
+            name="questions"
+            placeholder="Questions"
+          />
+          <ErrorMessage
+            className="text-[#e05e37]"
+            name="questions"
+            component="div"
+          />
           <button type="submit" disabled={isSubmitting}>
             Submit
           </button>
