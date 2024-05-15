@@ -13,16 +13,15 @@ function App() {
   return (
     <div className=" ">
       <Navbar />
+
       <Logo />
-      <div id="description" />
-      <Description />
+
       <div id="schema" />
       <Schema />
-      <div id="howWork" />
-      <HowWork />
+
       <div id="company" />
       <Company />
-      <div id="form" />
+      <div className="bg-[#272B3A]" id="form" />
       <BasicForm />
       <div id="contact" />
       <Contact />

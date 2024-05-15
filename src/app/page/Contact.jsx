@@ -4,8 +4,8 @@ import Image from "next/image";
 import Cart from "./ui/img/карта.svg";
 const Contact = () => {
   return (
-    <div className="pt-[60px] pb-[60px] px-[60px] lg:px-[120px] bg-[#ffffff]">
-      <h2 className="text-[64px]">Контакты</h2>
+    <div className="pt-[60px] pb-[60px] px-[60px] lg:px-[120px] bg-[#272B3A]">
+      <h2 className="text-[64px] pb-[10px] text-white">Контакты</h2>
       <div className="bg-[#f5f1f1] p-[120px] flex gap-[74px] flex-row justify-between">
         <div className="flex gap-3 flex-col">
           <div className="flex gap-[74px]">

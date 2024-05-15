@@ -2,8 +2,9 @@ import React from "react";
 import schem from "./ui/img/схема.svg";
 import { GoGitCommit } from "react-icons/go";
 import BankIcons from "./ui/icons";
-import Bank from "./ui/img/Vector (1).svg";
-import Corp from "./ui/img/Vector (2).svg";
+import Bank from "../../../public/image 10.svg";
+import Corp from "../../../public/Vector (3).svg";
+import Gos from "../../../public/image 11.svg";
 import Image from "next/image";
 
 const HowWork = () => {
@@ -46,34 +47,34 @@ const HowWork = () => {
       </div>
 
       <div className=" flex items-center gap-9 flex-col lg:flex-row justify-between mt-[120px]">
-        <div className="flex flex-col gap-2 max-w-[320px] justify-center text-center items-center">
-          <h4 className="text-[32px] leading-[150%] text-[rgba(10,4,89,0.9)] font-bold">
+        <div className="flex flex-col gap-2 max-w-[320px] bg-gradient-to-b from-[#272b3a] via-[#272b3a] to-[#1DEBEF] justify-center text-center items-center py-[30px]">
+          <h4 className="text-[32px] leading-[150%] text-white font-bold ">
             Банки
           </h4>
           <Image className="max-w-[264px]" src={Bank} alt="img" />
-          <p>
+          <p className="text-white">
             Применяется для оперативного создания защищённых каналов связи между
             отделениями банка как в пределах одного города, так и области
           </p>
         </div>
 
-        <div className="flex flex-col gap-2 max-w-[320px] justify-center text-center items-center">
-          <h4 className="text-[32px] leading-[150%] text-[rgba(10,4,89,0.9)] font-bold">
+        <div className="flex flex-col gap-2 max-w-[320px] bg-gradient-to-b from-[#272b3a] via-[#272b3a] to-[#E65B3F] justify-center text-center items-center py-[30px]">
+          <h4 className="text-[32px] leading-[150%] text-white font-bold ">
             Корпорации
           </h4>
           <Image className="max-w-[264px]" src={Corp} alt="img" />
-          <p>
+          <p className="text-white">
             Помогает создавать временные и/или постоянные защищённые каналы
             связи между филиалами
           </p>
         </div>
 
-        <div className="flex flex-col gap-2 max-w-[320px] justify-center text-center items-center">
-          <h4 className="text-[32px] leading-[150%] text-[rgba(10,4,89,0.9)] font-bold">
+        <div className="flex flex-col gap-2 max-w-[320px] bg-gradient-to-b from-[#272b3a] via-[#272b3a] to-[#DC58A4] justify-center text-center items-center py-[30px]">
+          <h4 className="text-[32px] leading-[150%] text-white font-bold ">
             Банки
           </h4>
-          <Image className="max-w-[264px]" src={Bank} alt="img" />
-          <p>
+          <Image className="max-w-[264px]" src={Gos} alt="img" />
+          <p className="text-white">
             Применяется для оперативного создания защищённых каналов связи между
             отделениями банка как в пределах одного города, так и области
           </p>
