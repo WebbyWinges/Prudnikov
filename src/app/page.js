@@ -18,10 +18,11 @@ function App() {
 
       <div id="schema" />
       <Schema />
-
+      <div id="howWork" />
+      <HowWork />
       <div id="company" />
       <Company />
-      <div className="bg-[#272B3A]" id="form" />
+      <div className="bg-white" id="form" />
       <BasicForm />
       <div id="contact" />
       <Contact />

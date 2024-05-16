@@ -16,30 +16,12 @@ import "slick-carousel/slick/slick-theme.css";
 
 function SampleNextArrow(props) {
   const { className, style, onClick } = props;
-  return (
-    <div
-      className={"w-[75px] h-[78px] min-w-[75px] min-h-[75px] cursor-pointer"}
-      style={{ ...style, display: "block", background: "" }}
-      onClick={onClick}
-    >
-      <Image src={right} alt="left" className="" />
-    </div>
-  );
+  return <div></div>;
 }
 
 function SamplePrevArrow(props) {
   const { className, style, onClick } = props;
-  return (
-    <div
-      className={
-        " min-w-[75px] min-h-[75px] w-[75px] h-[78px] cursor-pointer relative"
-      }
-      style={{ ...style, display: "block", background: "" }}
-      onClick={onClick}
-    >
-      <Image src={left} alt="left" className="" />
-    </div>
-  );
+  return <div></div>;
 }
 
 const settings = {
@@ -56,7 +38,7 @@ const settings = {
 const Logo = () => {
   return (
     <div className="">
-      <div className=" flex flex-row px-[60px] lg:px-[120px] bg-[#FFFFFF] pt-[25px] pb-[25px] ">
+      <div className=" flex flex-row px-[60px] lg:px-[120px] bg-[#FFFFFF] pt-[25px] pb-[25px] justify-center ">
         <div className="flex flex-row justify-between items-center pb-[55px]"></div>
         <div className="flex flex-col xl:flex-row items-center gap-[12px] xl:gap-[35px] mt-[100px]">
           <div className="flex flex-col gap-[44px] xl:gap-[96px]">
@@ -87,9 +69,9 @@ const Logo = () => {
           <hr class="border-t-2 border-black w-full" />
         </div>
 
-        <div className="flex justify-center flex-row items-center gap-[64px]">
+        <div className="flex justify-center flex-col lg:flex-row items-center gap-[64px]">
           <Image className="" src={fond} alt="pink" />
-          <p className="text-[18px] w-[800px] leading-[32px] gap-[68px]">
+          <p className="text-[18px] max-w-[800px] leading-[32px] gap-[68px]">
             Проект поддержан Фондом содействия развитию малых форм предприятий в
             научно-технической сфере (Фонд содействия инновациям)
           </p>
@@ -103,9 +85,9 @@ const Logo = () => {
           <div id="description" />
           <Slider
             {...settings}
-            className=" !flex !items-center !gap-3 mx-[100px] my-[40px] max-w-[1200px] "
+            className=" !flex !items-center !gap-3 mx-[100px] my-[40px] max-w-[835px] 2xl:max-w-[1200px]  "
           >
-            <div className="bg-transparent !flex !flex-row items-center gap-[18px] text-black p-[20px] rounded-lg">
+            <div className="bg-transparent !flex !flex-col lg:!flex-row items-center gap-[18px] text-black p-[20px] rounded-lg">
               <div className="w-[360px]">
                 <p>
                   Мобильный модуль шифрования для систем квантового
@@ -114,7 +96,7 @@ const Logo = () => {
                   удалёнными пользователями в рамках открытой сети.
                 </p>
               </div>
-              <div className=" z-[10] !w-[536px] ">
+              <div className=" z-[10] !w-[350px] xl:!w-[536px] ">
                 <Image className="" src={qVad} alt="pink" />
               </div>
               <div className="w-[360px]">

@@ -90,13 +90,13 @@ const BasicForm = () => (
       {({ isSubmitting }) => (
         <div className={s.forms}>
           <Form className={s.formsik}>
-            <h1 className="!text-white text-[40px] text-center">
+            <h1 className="!text-black text-[40px] text-center">
               Обратная связь
             </h1>
             <ToastContainer />
 
             <Tabs defaultValue="phis" className="w-full">
-              <TabsList className="grid w-full gap-[10px] grid-cols-2 bg-[#ffffff00]">
+              <TabsList className="grid w-full gap-[10px] grid-cols-2 bg-white">
                 <TabsTrigger className=" !bg-white" value="phis">
                   Физическое лицо
                 </TabsTrigger>
@@ -239,7 +239,7 @@ const BasicForm = () => (
             </Tabs>
 
             <button className={s.button} type="submit" disabled={isSubmitting}>
-              Submit
+              Отправить
             </button>
           </Form>
         </div>

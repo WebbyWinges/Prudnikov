@@ -1,6 +1,7 @@
 .forms{
 
-    padding-bottom: 120px;
+
+
 
 
 .formsik{
@@ -16,15 +17,12 @@
 
  
     padding: 35px;
-    border-radius:5px;
+    border-radius:70px;
 
-    border: 10px solid #D57AB0;
 
-    border: 5px solid #8BBABD;
 
-    -webkit-box-shadow: -2px 0px 100px -12px rgba(0, 134, 236, 0.2);
-    -moz-box-shadow: -2px 0px 100px -12px rgba(0, 134, 236, 0.2);
-    box-shadow: -2px 0px 100px -12px rgba(0, 134, 236, 0.2);
+    border: 2px solid black;
+
 
 
     @media(max-width:1400px) {
@@ -43,7 +41,7 @@
     
     input{
         padding: 10px;
-        border-radius: 5px;
+        border-radius: 35px;
         border: 1px solid #5555;
         &:focus{
             color: #5a5959;
@@ -57,18 +55,18 @@
         align-items: center;
         width: 25%;
         border: none;
-        border-radius: 5px;
+        border-radius: 15px;
         margin-left: 35%;
         padding: 5px;
-        background-color: white;
-        color: #5a5959;
+        background-color: black;
+        color: white;
         &:hover{
             opacity: 0.8;
         }
      }
 }
 
-    background: #272B3A;
+    background: white;
     
     
 }

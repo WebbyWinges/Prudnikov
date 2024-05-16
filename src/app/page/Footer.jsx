@@ -4,20 +4,20 @@ import { PhoneIcons } from "./ui/icons";
 
 const Company = () => {
   return (
-    <div className="pt-[60px] pb-[60px] px-[60px] lg:px-[120px] bg-[#272B3A] flex flex-col gap-12 ">
+    <div className="pb-[60px] px-[60px] lg:px-[120px] bg-white flex flex-col gap-12 ">
       <div className="flex justify-between w-full">
-        <div className=" text-white flex flex-col gap-2">
-          <p className="flex flex-row items-center gap-3 text-white">
+        <div className=" text-black flex flex-col gap-2">
+          <p className="flex flex-row items-center gap-3 text-black">
             <span>
               <PhoneIcons />
             </span>{" "}
-            +7 (495) 114-55-17
+            +7 (919) 896-14-27
           </p>
           <p>Заказать звонок</p>
         </div>
 
         <div>
-          <div className="flex gap-12 text-white">
+          <div className="flex gap-12 text-black">
             <div className="flex flex-col">
               <p className="font-bold">E-mail:</p>
               <p>pruvad-tech@yandex.ru</p>
@@ -32,7 +32,7 @@ const Company = () => {
       </div>
 
       <div>
-        <span className="text-white">© 2023 название</span>
+        <span className="text-black">© 2023 название</span>
       </div>
     </div>
   );

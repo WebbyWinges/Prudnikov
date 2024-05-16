@@ -4,9 +4,12 @@ import Image from "next/image";
 import Cart from "./ui/img/карта.svg";
 const Contact = () => {
   return (
-    <div className="pt-[60px] pb-[60px] px-[60px] lg:px-[120px] bg-[#272B3A]">
-      <h2 className="text-[64px] pb-[10px] text-white">Контакты</h2>
-      <div className="bg-[#f5f1f1] p-[120px] flex gap-[74px] flex-row justify-between">
+    <div className="pt-[20px] pb-[60px] px-[60px] lg:px-[120px] bg-white">
+      <div class="container mx-auto my-8">
+        <hr class="border-t-2 border-black w-full" />
+      </div>
+      <h2 className="text-[64px] px-[120px] pb-[10px] text-black">Контакты</h2>
+      <div className="bg-white p-[120px] flex flex-row justify-center gap-[60px] lg:gap-[260px]">
         <div className="flex gap-3 flex-col">
           <div className="flex gap-[74px]">
             <div className="flex flex-col gap-10">
@@ -20,7 +23,8 @@ const Contact = () => {
                 <p className="text-lg font-medium leading-[22px] tracking-normal text-left">
                   Телефон:
                 </p>
-                <span>+7 (495) 114-55-17</span>
+                <span>+7 (919) 896-14-27
+                </span>
               </div>
             </div>
 
@@ -50,6 +54,9 @@ const Contact = () => {
           <p className="text-[24px]">Как нас найти?</p>
           <Image src={Cart} alt="img" />
         </div>
+      </div>
+      <div class="container mx-auto my-8">
+        <hr class="border-t-2 border-black w-full" />
       </div>
     </div>
   );
