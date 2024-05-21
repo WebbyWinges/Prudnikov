@@ -15,7 +15,11 @@ const HowWork = () => {
           <h4 className="text-[32px] leading-[150%] text-black font-bold ">
             Корпорации
           </h4>
-          <Image className="max-w-[264px]" src={Corp} alt="img" />
+          <Image
+            className="max-w-[120px] lg:max-w-[264px]"
+            src={Corp}
+            alt="img"
+          />
           <p className="text-black">
             Помогает создавать временные и/или постоянные защищённые каналы
             связи между филиалами
@@ -25,7 +29,11 @@ const HowWork = () => {
           <h4 className="text-[32px] leading-[150%] text-black font-bold ">
             Банки
           </h4>
-          <Image className="max-w-[264px]" src={Bank} alt="img" />
+          <Image
+            className="max-w-[120px] lg:max-w-[264px]"
+            src={Bank}
+            alt="img"
+          />
           <p className="text-black">
             Применяется для оперативного создания защищённых каналов связи между
             отделениями банка как в пределах одного города, так и области
@@ -36,7 +44,11 @@ const HowWork = () => {
           <h4 className="text-[32px] leading-[150%] text-black font-bold ">
             Госучреждения
           </h4>
-          <Image className="max-w-[264px]" src={Gos} alt="img" />
+          <Image
+            className="max-w-[120px] lg:max-w-[264px]"
+            src={Gos}
+            alt="img"
+          />
           <p className="text-black">
             Позволяет в кратчайшие сроки установить защищённые соединения,
             например, с объектами критической инфраструктуры

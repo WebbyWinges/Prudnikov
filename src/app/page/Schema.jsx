@@ -7,7 +7,11 @@ const Schema = () => {
   return (
     <div className="mt-[120px]  px-[60px] lg:px-[120px]">
       <div className="flex  flex-col xl:flex-row items-center justify-center gap-[77px] mb-[30px]">
-        <Image src={schem} alt="schem" />
+        <Image
+          src={schem}
+          alt="schem"
+          className=" max-w-[280px] sm:max-w-[320px] lg:max-w-[440px]"
+        />
         <div className="flex flex-col gap-[2px]">
           <div>
             <span className="font-[600]">QVad </span> – мобильный модуль

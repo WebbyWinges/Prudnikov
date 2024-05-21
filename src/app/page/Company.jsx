@@ -31,14 +31,14 @@ const Company = () => {
         <hr class="border-t-2 border-black w-full" />
       </div>
       <div className="pt-[60px] pb-[60px] px-[60px] lg:px-[120px] bg-white">
-        <h2 className="text-[64px] text-black">О компании</h2>
+        <h2 className="text-[32px] lg:text-[64px] text-black">О компании</h2>
         <>
           <div className="flex relative justify-center">
             <Slider
               {...settings}
-              className=" !flex !items-center !gap-3 mx-[100px] my-[40px] max-w-[835px] 2xl:max-w-[1200px] "
+              className=" !flex !items-center !gap-3 mx-[100px] my-[40px] max-w-[220px] sm:max-w-[450px] lg:max-w-[500px] xl:max-w-[835px] 2xl:max-w-[1200px] "
             >
-              <div className="bg-transparent text-black p-[45px] rounded-lg">
+              <div className="bg-transparent text-black  p-[0px] lg:p-[45px] rounded-lg">
                 ООО "ПРУВАД-ТЕХ" была основана в 2023 году в результате победы
                 проекта "Мобильный модуль шифрования для систем квантового
                 распределения ключей" в конкурсе "Студенческий Стартап" Фонда
@@ -54,7 +54,7 @@ const Company = () => {
                 занимается исследованиями и разработками в перспективном
                 направлении "Квантовые технологии".
               </div>
-              <div className="bg-transparent text-black p-[45px] rounded-lg">
+              <div className="bg-transparent text-black p-[0px] lg:p-[45px] rounded-lg">
                 Полное наименование: ОБЩЕСТВО С ОГРАНИЧЕННОЙ ОТВЕТСТВЕННОСТЬЮ
                 "ПРУВАД-ТЕХ"
                 <br />
@@ -74,7 +74,7 @@ const Company = () => {
                 <br />
                 Электронная почта: pruvad-tech@yandex.ru Сайт: pruvad-tech.ru
               </div>
-              <div className="bg-transparent p-[45px] justify-center text-black rounded-lg !flex gap-3">
+              <div className="bg-transparent flex-wrap lg:flex-nowrap  p-[0px] lg:p-[45px] justify-center text-black rounded-lg !flex gap-3">
                 <div className=" rounded-lg bg-[#ffffff10] px-3  text-center flex flex-col justify-center items-center min-w-[124px] max-w-[124px] min-h-[124px] gap-3 ">
                   <Image
                     src={art}

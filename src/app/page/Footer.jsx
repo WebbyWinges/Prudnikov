@@ -5,7 +5,7 @@ import { PhoneIcons } from "./ui/icons";
 const Company = () => {
   return (
     <div className="pb-[60px] px-[60px] lg:px-[120px] bg-white flex flex-col gap-12 ">
-      <div className="flex justify-between w-full">
+      <div className="flex justify-between w-full gap-[10px]">
         <div className=" text-black flex flex-col gap-2">
           <p className="flex flex-row items-center gap-3 text-black">
             <span>

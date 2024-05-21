@@ -5,11 +5,10 @@ import Cart from "./ui/img/карта.svg";
 const Contact = () => {
   return (
     <div className="pt-[20px] pb-[60px] px-[60px] lg:px-[120px] bg-white">
-      <div class="container mx-auto my-8">
-        <hr class="border-t-2 border-black w-full" />
-      </div>
-      <h2 className="text-[64px] px-[120px] pb-[10px] text-black">Контакты</h2>
-      <div className="bg-white p-[120px] flex flex-row justify-center gap-[60px] lg:gap-[260px]">
+      <h2 className="text-[32px] lg:text-[64px] p-[0px] lg:px-[120px] pb-[10px] text-black">
+        Контакты
+      </h2>
+      <div className="bg-white p-[0px] lg:p-[120px] flex flex-col lg:flex-row justify-center gap-[60px] lg:gap-[260px]">
         <div className="flex gap-3 flex-col">
           <div className="flex gap-[74px]">
             <div className="flex flex-col gap-10">
@@ -23,8 +22,7 @@ const Contact = () => {
                 <p className="text-lg font-medium leading-[22px] tracking-normal text-left">
                   Телефон:
                 </p>
-                <span>+7 (919) 896-14-27
-                </span>
+                <span>+7 (919) 896-14-27</span>
               </div>
             </div>
 

@@ -42,7 +42,7 @@ const Logo = () => {
         <div className="flex flex-row justify-between items-center pb-[55px]"></div>
         <div className="flex flex-col xl:flex-row items-center gap-[12px] xl:gap-[35px] mt-[100px]">
           <div className="flex flex-col gap-[44px] xl:gap-[96px]">
-            <p className="shrink-0 text-[#000000] text-[54px] lg:text-8xl not-italic font-[500] leading-[50px] xl:leading-[136px] w-full xl:w-[200px] ">
+            <p className="shrink-0 text-[#000000] text-[24px] sm:text-[54px] lg:text-8xl not-italic font-[500] leading-[24px] sm:leading-[50px] xl:leading-[136px] w-full xl:w-[200px] ">
               Отечественное мобильное устройство
             </p>
 
@@ -85,7 +85,7 @@ const Logo = () => {
           <div id="description" />
           <Slider
             {...settings}
-            className=" !flex !items-center !gap-3 mx-[100px] my-[40px] max-w-[835px] 2xl:max-w-[1200px]  "
+            className=" !flex !items-center !gap-3 mx-[100px] my-[40px] max-w-[420px] sm:max-w-[640px] lg:max-w-[835px] 2xl:max-w-[1200px]  "
           >
             <div className="bg-transparent !flex !flex-col lg:!flex-row items-center gap-[18px] text-black p-[20px] rounded-lg">
               <div className="w-[360px]">
@@ -108,7 +108,7 @@ const Logo = () => {
               </div>
             </div>
             <div className="bg-transparent p-[45px] justify-center text-black rounded-lg !flex gap-3">
-              <div className=" flex flex-row gap-[12px] items-center ">
+              <div className=" flex flex-col lg:flex-row gap-[12px] items-center ">
                 <Image className="" width={400} src={q1} alt="q1" />
                 <p>
                   Система извлекает из СКРК квантовые ключи и использует их для
@@ -121,7 +121,7 @@ const Logo = () => {
             </div>
 
             <div className="bg-transparent p-[45px] justify-center text-black rounded-lg !flex gap-3">
-              <div className=" flex flex-row gap-[12px] items-center ">
+              <div className=" flex flex-col lg:flex-row gap-[12px] items-center ">
                 <Image className="" width={500} src={q2} alt="q2" />
                 <p>
                   Стоит отметить, что устройство не является средством

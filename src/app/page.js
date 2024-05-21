@@ -11,7 +11,7 @@ import Footer from "./page/Footer";
 
 function App() {
   return (
-    <div className=" ">
+    <div className="w-full ">
       <Navbar />
 
       <Logo />
@@ -22,8 +22,8 @@ function App() {
       <HowWork />
       <div id="company" />
       <Company />
-      <div className="bg-white" id="form" />
-      <BasicForm />
+      {/* <div className="bg-white" id="form" />
+      <BasicForm /> */}
       <div id="contact" />
       <Contact />
       <Footer />
