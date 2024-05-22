@@ -1,8 +1,16 @@
+"use client";
 import React from "react";
 import { TgIcons, VkIcons, YouTubeIcons } from "./ui/icons";
 import Image from "next/image";
 import Cart from "./ui/img/карта.svg";
 const Contact = () => {
+  // ymaps.ready(() => {
+  //   const myMap = new ymaps.Map(mapRef.current, {
+  //     center: [47.203948, 38.943917],
+  //     zoom: 18,
+  //   });
+  // });
+
   return (
     <div className="pt-[20px] pb-[60px] px-[60px] lg:px-[120px] bg-white">
       <h2 className="text-[32px] lg:text-[64px] p-[0px] lg:px-[120px] pb-[10px] text-black">
@@ -50,7 +58,8 @@ const Contact = () => {
 
         <div className="flex flex-col gap-[12px]">
           <p className="text-[24px]">Как нас найти?</p>
-          <Image src={Cart} alt="img" />
+          {/* 
+          <div id="map" style={{ width: "500px", height: "400px" }}></div> */}
         </div>
       </div>
       <div class="container mx-auto my-8">
