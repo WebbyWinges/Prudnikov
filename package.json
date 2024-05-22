@@ -7,10 +7,12 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "export": "next export"
   },
   "dependencies": {
     "@radix-ui/react-slot": "^1.0.2",
+
     "@radix-ui/react-tabs": "^1.0.4",
     "axios": "^1.6.7",
     "class-variance-authority": "^0.7.0",
