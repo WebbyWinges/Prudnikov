@@ -1,3 +1,4 @@
+"use client";
 import Logo from "./page/Logo";
 import Navbar from "./page/Navbar";
 import Description from "./page/Description";
@@ -18,11 +19,11 @@ function App() {
 
       <div id="schema" />
       <Schema />
-      <div id="howWork" />
+
       <HowWork />
       <div id="company" />
       <Company />
-      <div className="bg-white" id="form" />
+
       <BasicForm />
       <div id="contact" />
       <Contact />

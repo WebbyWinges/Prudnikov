@@ -170,7 +170,9 @@ const Company = () => {
             </Slider>
           </div>
         </>
+        <div className="bg-white" id="form" />
       </div>
+
       <div class="container mx-auto my-8">
         <hr class="border-t-2 border-black w-full" />
       </div>

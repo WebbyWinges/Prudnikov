@@ -12,8 +12,15 @@ import InputMask from "react-input-mask";
 import s from "../styles/forms.module.scss";
 
 const showToastMessage = () => {
-  toast.success("Форма отправлена  !", {
-    position: toast.POSITION.TOP_RIGHT,
+  toast.success("Форма отправлена", {
+    position: "top-right",
+    autoClose: 5000,
+    hideProgressBar: false,
+    closeOnClick: true,
+    pauseOnHover: true,
+    draggable: true,
+    progress: undefined,
+    theme: "light",
   });
 };
 
@@ -56,8 +63,8 @@ const addNewUser = async (values) => {
     showToastMessage();
     return response.data;
   } catch (err) {
-    console.error(err.toJSON());
-    showToastError();
+    console.error(err);
+    showToastMessage();
   }
 };
 

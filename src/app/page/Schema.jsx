@@ -92,6 +92,7 @@ const Schema = () => {
           </div>
         </div>
       </div>
+      <div id="howWork" />
       <div class="container mx-auto my-[120px]">
         <hr class="border-t-2 border-black w-full" />
       </div>

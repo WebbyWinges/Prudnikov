@@ -12,10 +12,10 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en" className="!scroll-smooth bg-[#FFFFFF]">
       <head>
-        <script
+        {/* <script
           src="https://api-maps.yandex.ru/2.1/?lang=ru_RU"
           type="text/javascript"
-        ></script>
+        ></script> */}
       </head>
       <body className={inter.className}>{children}</body>
     </html>

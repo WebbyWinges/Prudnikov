@@ -32,7 +32,7 @@ const Company = () => {
       </div>
 
       <div>
-        <span className="text-black">© 2023 название</span>
+        <span className="text-black"> © 2024 ООО"ПРУВАД-ТЕХ"</span>
       </div>
     </div>
   );

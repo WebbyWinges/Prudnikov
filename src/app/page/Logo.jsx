@@ -107,7 +107,7 @@ const Logo = () => {
                 </p>
               </div>
             </div>
-            <div className="bg-transparent p-[45px] justify-center text-black rounded-lg !flex gap-3">
+            <div className="bg-transparent p-[45px] mt-[120px] justify-center text-black rounded-lg !flex gap-3">
               <div className=" flex flex-row gap-[12px] items-center ">
                 <Image className="" width={400} src={q1} alt="q1" />
                 <p>
@@ -120,7 +120,7 @@ const Logo = () => {
               </div>
             </div>
 
-            <div className="bg-transparent p-[45px] justify-center text-black rounded-lg !flex gap-3">
+            <div className="bg-transparent p-[45px] justify-center mt-[120px] text-black rounded-lg !flex gap-3">
               <div className=" flex flex-row gap-[12px] items-center ">
                 <Image className="" width={500} src={q2} alt="q2" />
                 <p>
@@ -135,7 +135,7 @@ const Logo = () => {
                 </p>
               </div>
             </div>
-            <div className="bg-transparent p-[45px] text-black rounded-lg   max-h-[298px] overflow-y-auto">
+            <div className="bg-transparent p-[45px] text-black rounded-lg  mt-[180px] max-h-[298px] overflow-y-auto">
               <p>
                 б) шифровальных (криптографических) средств, а также товаров,
                 содержащих шифровальные (криптографические) средства,
